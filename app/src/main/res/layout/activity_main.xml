@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="495dp"
+        tools:context="com.taigo.taigotest.MainActivity"
+        >
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1" >
+    <TextView
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:id="@+id/txtShow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="数据显示" />
+</ScrollView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:enabled="false"
+            android:id="@+id/btnStarLuck"
+            android:onClick="StarLuckHandler"
+            android:text="星座运势"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:enabled="false"
+            android:id="@+id/btnValify"
+            android:onClick="ValifyHandler"
+            android:text="连接验证"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:enabled="false"
+            android:id="@+id/btnAccessory"
+            android:onClick="AccessoryHandler"
+            android:text="道具"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:enabled="false"
+            android:id="@+id/btnTime"
+            android:onClick="TimeHandler"
+            android:text="时间"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:enabled="false"
+            android:id="@+id/btnNotify"
+            android:onClick="NotifyHandler"
+            android:text="接收蓝牙通知"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btnConnect"
+            android:onClick="ConnectHandler"
+            android:text="连接哈尼蛋"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    </LinearLayout>
